@@ -1,7 +1,6 @@
 <template>
     <header class="main-header">
-        <h1>G Todo666666</h1>
-
+        <h1>Noticer</h1>
     </header>
 </template>
 <style lang="less" scoped>

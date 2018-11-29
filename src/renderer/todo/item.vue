@@ -50,43 +50,43 @@
                 text-decoration: line-through;
             }
         }
+        .toggle {
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            border: none;
+            -webkit-appearance: none; //所有主流浏览器都不支持的这个样式
+            outline: none;
+            &:after {
+                content: url('../assets/images/round.svg');
+            }
+            &:checked:after {
+                content: url('../assets/images/done.svg');
+            }
+        }
+
+        .destory {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            bottom: 0;
+            width: 40px;
+            height: 40px;
+            margin: auto 0;
+            font-size: 30px;
+            color: #cc9a9a;
+            /*margin-bottom: 11px;*/
+            transition: color 0.2s ease-out;
+            background-color: transparent;
+            appearance: none;
+            border-width: 0;
+            cursor: pointer;
+            outline: none;
+        }
     }
 
-    .toggle {
-        text-align: center;
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto 0;
-        border: none;
-        appearance: none;
-        outline: none;
-        &:after {
-            content: url('../assets/images/round.svg');
-        }
-        &:checked:after {
-            content: url('../assets/images/done.svg');
-        }
-    }
-
-    .destory {
-        position: absolute;
-        top: 0;
-        right: 10px;
-        bottom: 0;
-        width: 40px;
-        height: 40px;
-        margin: auto 0;
-        font-size: 30px;
-        color: #cc9a9a;
-        margin-bottom: 11px;
-        transition: color 0.2s ease-out;
-        background-color: transparent;
-        appearance: none;
-        border-width: 0;
-        cursor: pointer;
-        outline: none;
-    }
 </style>
